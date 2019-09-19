@@ -15,4 +15,4 @@ ON students.id = assistance_requests.student_id
 JOIN cohorts
 ON cohorts.id = students.cohort_id
 group by cohorts.name
-order by total_duration)
+order by total_duration) request;

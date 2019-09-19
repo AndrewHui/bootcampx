@@ -8,4 +8,5 @@ FROM assistance_requests join students
 on students.id = assistance_requests.student_id 
 JOIN cohorts 
 ON cohorts.id = students.cohort_id
+GROUP by cohorts.name
 order by avgTime;
